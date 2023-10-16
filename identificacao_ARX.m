@@ -119,6 +119,19 @@ sysS = d2c(sysZ)
 // -> plot
 plot(TempoNorm,DegrauNorm,TempoNorm,VazaoNorm, TempoNorm,Ye,'g')
 grid
+
+/*
+    ERRO QUADRATICO MÉDIO
+    - EQM = sqrt(mean((vazaonorm - Ye).^2))
+        - EQM -> valor bem baixo, sem unidade de medida, quanto menor o valor melhor a FCT
+        - vazaonorm -> valor amostrado
+        - Ye -> resposta do modelo calculado
+    - Verificar se obtivemos uma resposta aceitavel
+    
+*/
+
+
+
 /*--------------------------[VALIDACAO]--------------------------*/
 
 
