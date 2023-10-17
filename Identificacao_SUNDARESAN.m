@@ -72,6 +72,7 @@ Temp_su = Temp_su*Degrau(1,end);
 Temp_su = Temp_su(1:end-1,1)
 plot(Tempo,Temp,Tempo,Temp_su,'r')
 
+// -> matriz inversa apenas porque elas precisam ter as mesmas dimensoes (linas x colunas)
 Temp_su = Temp_su';
 EQM_su = sqrt(mean((Temp - Temp_su).^2))
 
